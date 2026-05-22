@@ -1,76 +1,86 @@
 {
-    "id": "dsa5-aventuria-map",
-    "title": "DSA5/TDE5 - Interaktive Aventurienkarte",
-    "description": "Eine interaktive Aventurienkarte für DSA5. An interactive Aventuria Map for TDE5. (German Version)",
-    "authors": [
-      { "name": "Himmelweiss" }
-    ],
-    "url": "https://github.com/himmelweiss/dsa5-aventuria-map",
-    "flags": {},
-    "version": "1.0.8",
-	"compatibility": {
-		"minimum": "12",
-		"verified": "13",
-		"maximum": "13"
-	},
-	"media": [{
-		"type": "setup",
-		"url": "modules/dsa5-aventuria-map/icons/thumbs/setup.webp",
-		"loop": false,
-		"thumbnail": "modules/dsa5-aventuria-map/icons/thumbs/setup-thumb.webp",
-		"flags": {}
-		}
-	],
-    "scripts": [],
-    "esmodules": [
-        "modules/init.js"
-    ],
-    "styles": [
-        "styles/map.css"
-    ],
-    "languages": [{
-        "lang": "de",
-        "name": "Deutsch",
-        "path": "lang/de.json"
+  "id": "dsa5-aventuria-map",
+  "title": "DSA5/TDE5 - Interaktive Aventurienkarte",
+  "description": "Eine interaktive Aventurienkarte für DSA5. An interactive Aventuria Map for TDE5. (German Version)",
+  "authors": [
+    {
+      "name": "Himmelweiss"
+    }
+  ],
+  "url": "https://github.com/himmelweiss/dsa5-aventuria-map",
+  "flags": {},
+  "version": "1.0.8",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/dsa5-aventuria-map/icons/thumbs/setup.webp",
+      "loop": false,
+      "thumbnail": "modules/dsa5-aventuria-map/icons/thumbs/setup-thumb.webp",
+      "flags": {}
+    }
+  ],
+  "scripts": [],
+  "esmodules": [
+    "modules/init.js"
+  ],
+  "styles": [
+    "styles/map.css"
+  ],
+  "languages": [
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
     },
     {
-        "lang": "en",
-        "name": "English",
-        "path": "lang/en.json"
-    }],
-    "packs": [{
-            "name": "aventuriajournals",
-            "label": "Aventurien",
-            "system": "dsa5",
-            "path": "./packs/aventuriajournals.db",
-            "entity": "JournalEntry",
-            "type": "JournalEntry",
-            "private": false
-        },
-        {
-            "name": "aventuriamaps",
-            "label": "Aventurien",
-            "system": "dsa5",
-            "path": "./packs/aventuriamaps.db",
-            "entity": "Scene",
-            "type": "Scene",
-            "private": false
-        }
-    ],
-    "relationships": {
-        "systems": [{
-            "id": "dsa5",
-            "type": "system"
-        }],
-        "requires": [{
-            "id": "dsa5-core",
-            "type": "module"
-        }]
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "aventuriajournals",
+      "label": "Aventurien",
+      "system": "dsa5",
+      "path": "./packs/aventuriajournals.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry",
+      "private": false
     },
-    "socket": false,
-    "manifest": "https://github.com/himmelweiss/dsa5-aventuria-map/releases/latest/download/module.json",
-    "download": "https://github.com/himmelweiss/dsa5-aventuria-map/releases/download/1.0.8/module.zip",
-    "protected": false,
-    "coreTranslation": false,
-    "library": false
+    {
+      "name": "aventuriamaps",
+      "label": "Aventurien",
+      "system": "dsa5",
+      "path": "./packs/aventuriamaps.db",
+      "entity": "Scene",
+      "type": "Scene",
+      "private": false
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dsa5",
+        "type": "system"
+      }
+    ],
+    "requires": [
+      {
+        "id": "dsa5-core",
+        "type": "module"
+      }
+    ]
+  },
+  "socket": false,
+  "manifest": "https://github.com/himmelweiss/dsa5-aventuria-map/releases/latest/download/module.json",
+  "download": "https://github.com/himmelweiss/dsa5-aventuria-map/releases/download/1.0.8/module.zip",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
 }
